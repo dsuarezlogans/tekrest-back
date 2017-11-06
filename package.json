@@ -1,0 +1,32 @@
+{
+  "name": "tekrest-back",
+  "version": "1.0.0",
+  "description":
+    "Backend aplicacion para restaurantes, prueba tecnica para tekton labs.",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec 'npm test'",
+    "dev": "nodemon server/server.js",
+    "start": "node server/server.js"
+  },
+  "author": "Danny Suarez",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "jwt-simple": "^0.5.1",
+    "moment": "^2.19.1",
+    "mongodb": "^2.2.33",
+    "mongoose": "^4.13.0",
+    "volleyball": "^1.4.1"
+  },
+  "devDependencies": {
+    "expect": "^21.2.1",
+    "mocha": "^4.0.1",
+    "nodemon": "^1.12.1",
+    "supertest": "^3.0.0"
+  }
+}
